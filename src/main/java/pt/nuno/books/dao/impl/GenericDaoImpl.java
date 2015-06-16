@@ -15,6 +15,9 @@
  */
 package pt.nuno.books.dao.impl;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  *
  * @author nuno
@@ -23,5 +26,21 @@ package pt.nuno.books.dao.impl;
  */
 public abstract class GenericDaoImpl<T, ID> implements GenericDao<T, ID> {
 
-    // init session factory
+    @Override
+    public T load(ID id) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public List<T> getAll() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public List<T> filter(Map<String, Object> filter) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    // TODO: manage session factory
+    // TODO: implement all abstract methods with Criteria API
 }
