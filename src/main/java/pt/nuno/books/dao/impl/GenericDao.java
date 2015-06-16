@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package pt.nuno.books.core.dao.impl;
+package pt.nuno.books.dao.impl;
 
 import java.util.List;
 import java.util.Map;
